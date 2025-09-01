@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COFFEE DATE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+  
+  <div class="flex items-center justify-center h-screen" id="wrongCount">
+    <div class="flex flex-col items-center p-4">
+      <img id="imageDisplay" src="./panda_gif.webp" alt="Cute kitten with flowers" class="rounded-md h-[300px]" style="object-fit: cover;" />
+      <h2 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4">Whats your name?</h2>
+      <input type="text" class="form-control" placeholder="Enter Your Name" aria-label="Username" aria-describedby="basic-addon1" id="nameInput">
+      <div class="flex gap-4 pt-[20px] items-center" id="responseButtons">
+        <button 
+          class=" inline-flex items-center justify-center whitespace-nowrap rounded-md text-[20px] font-medium disabled:pointer-events-none disabled:opacity-50 hover:bg-green-400 min-h-12 min-w-[75px] px-4 py-2 bg-green-500 text-white transition" onclick="checkName()">
+          Yes, that's me
+        </button>
+      </div>
+    </div>
+  </div>
+
+  
+<script>
+    
+    let wrongAttempts = 0;
+
+    function checkName() {
+      const name = document.getElementById('nameInput').value.trim().toLowerCase();
+      if (name === 'panda') {
+        window.location.href = 'Congratulations.html';
+      } else {
+        alert('Common you dont know your name');
+      }
+    }
+
+  </script>  
+</body>
+</html>
