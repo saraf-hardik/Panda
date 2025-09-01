@@ -1,6 +1,4 @@
-# Valentine's Day Interactive Website (CodeKage)
-
-Thank you to [@mewtru](https://instagram.com/mewtru) for the video idea!
+#  Interactive Website (CodeKage)
 
 This code was completely created from scratch! utilising Tailwind CSS!
 
